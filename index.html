@@ -1,0 +1,65 @@
+<!DOCTYPE html >
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title></title>
+    <meta name="Generator" content="Cocoa HTML Writer">
+    <meta name="CocoaVersion" content="1671.4">
+    
+    <style type="text/css">
+    </style>
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+    </header>
+    <div class="mode">      
+          <input type='radio' id="single" checked/>
+          <label for="single">Singleplayer</label>
+          <input type='radio' id="multi"/> 
+          <label for="multi">Multiplayer</label>
+    </div>
+
+
+    <div class ="row">  
+      <div class="col s3"></div>  
+      <div class ="col s2 text">
+          <label id="lbl" for="txtPlayer1">Player1</label>
+          <input class="text" type="text" name="" id="txtPlayer1">
+      </div>    
+      <div class="col s2">
+        <div class="score-board">
+          <div id="user1-label" class="badge">user</div>
+          <div id= "user2-label" class="badge">comp</div>
+          <span id="user-score">0</span>:<span id ="computer-score">0</span>
+        </div>
+      </div>
+      <div class ="col s2 text">
+          <label for="txtPlayer2">Player2</label>
+          <input class="text" type="text" name="" id="txtPlayer2">
+      </div>
+      <div class="col s3"></div>  
+    </div>
+
+    <div class = "result">
+      <p></p>
+    </div>
+    <p id="action-message"> Make your move</p>
+    <div class="choices">
+     <div id="s" class = "choice">
+        <img src="paper.png" alt="">
+      </div>
+      <div id="r" class = "choice">
+        <img src="rock.png" alt="">
+      </div>
+      <div id="p" class = "choice">
+        <img src="scissor.png" alt="">
+     </div>
+   </div>
+    <script src="app.js"></script>
+  </body>
+</html>
